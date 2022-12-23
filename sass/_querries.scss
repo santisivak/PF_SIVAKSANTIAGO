@@ -1,0 +1,40 @@
+@import "mixins";
+/*SCSS*/
+@media only screen and (min-width:768px) {
+    .news{
+    text-align: left;
+        h1{
+        text-align: left;
+        }
+    }/*NO ME FUNCIONA EL ALIGN LEFT Y NO SE POR QUE*/
+    .comments{
+    text-align: right;
+        h1{
+        text-align: right;
+        }
+    }/*NO ME FUNCIONA EL ALIGN RIGHT Y NO SE POR QUE*/
+    .textoProducto{
+        font-size: 1.4rem;
+    }
+    .mapa iframe{
+        height: 400px;
+    }
+    footer img{
+        height: 100px;
+    }
+}
+@media only screen and (min-width:992px){
+    .mapa iframe{
+        height: 100%;
+    }
+    .persona{
+        @include medidas (350px, 450px);
+    }
+    .news{
+        height: 800px;
+    }
+    .comments{
+        height: 800px;
+        overflow-y: scroll;
+    }
+}
